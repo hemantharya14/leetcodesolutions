@@ -1,0 +1,11 @@
+#the code cooked by arya
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        
+        pat = r'[^a-zA-Z0-9]'
+        pr = re.sub(pat, '', s)
+        ll=pr.lower()
+        if ll==ll[::-1]:
+            return True
+        else:
+            return False 
